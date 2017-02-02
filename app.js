@@ -4,19 +4,19 @@ const value = document.getElementById('value');
 
 let state = 0;
 
-function setState() {
+function setState(args) {
   value.innerHTML = state;
 }
 
-setState();
+setState(state);
 
 
 add.addEventListener('click', () => {
   state += 1;
-  setState();
+  setState(state);
 });
 
 subtract.addEventListener('click', () => {
   state -= 1;
-  setState();
+  setState(state);
 });
